@@ -1,28 +1,27 @@
 /*
  * anaptecs GmbH, Burgstr. 96, 72764 Reutlingen, Germany
- * 
+ *
  * Copyright 2004 - 2013 All rights reserved.
  */
 package com.anaptecs.jeaf.xfun.types.test;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import com.anaptecs.jeaf.xfun.api.XFunMessages;
+import com.anaptecs.jeaf.xfun.api.errorhandling.SystemException;
+import com.anaptecs.jeaf.xfun.types.Base36;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import com.anaptecs.jeaf.xfun.api.XFunMessages;
-import com.anaptecs.jeaf.xfun.api.errorhandling.SystemException;
-import com.anaptecs.jeaf.xfun.types.Base36;
-
 /**
  * Class tests the generation of a unique object id on base36 Creates three ids (next id, session id and class id) and
  * generates a String
- * 
+ *
  * @author JEAF Development Team
  * @version 1.0
  */
@@ -31,7 +30,7 @@ public class Base36Test {
 
   /**
    * Test of constructor. Creates Base36-objects
-   * 
+   *
    * @throws Exception if an error occurs during the execution of the test case.
    */
   @Test
@@ -67,7 +66,7 @@ public class Base36Test {
 
   /**
    * Test of constructor. Tries to create a base36-object with an error parameter.
-   * 
+   *
    * @throws Exception because "-ab�" is not allowed.
    */
   @Test
@@ -85,7 +84,7 @@ public class Base36Test {
 
   /**
    * Test of method equals(). b36_0 and b36_3 have the same values!
-   * 
+   *
    */
   @SuppressWarnings("unlikely-arg-type")
   @Test
@@ -117,7 +116,7 @@ public class Base36Test {
 
   /**
    * test of compare(Base36, Base36). compares 2 base36-objects
-   * 
+   *
    */
   @Test
   @Order(5)
@@ -141,7 +140,7 @@ public class Base36Test {
 
   /**
    * test of method add(Base36). Adds a Base36-value to another.
-   * 
+   *
    * @throws Exception when sum is out of range.
    */
   @Test
@@ -177,7 +176,7 @@ public class Base36Test {
 
   /**
    * test of method increment(int). Increments a Base36 object by an integer.
-   * 
+   *
    * @throws Exception when sum is out of range.
    */
   @Test
