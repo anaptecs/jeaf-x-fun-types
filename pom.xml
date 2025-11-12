@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-module-project-parent</artifactId>
+		<version>1.8.0</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.x-fun</groupId>
+	<artifactId>jeaf-x-fun-types-project</artifactId>
+	<version>1.8.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>JEAF X-Fun Types Project</name>
+	<description>JEAF X-Fun Types provides basic data types that can be used as a basis for enterprise class software development projects.</description>
+	<url>https://www.anaptecs.de/jeaf</url>
+
+	<scm>
+		<connection>scm:git:https://github.com/anaptecs/jeaf-x-fun-types.git</connection>
+		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-x-fun-types.git</developerConnection>
+		<url>https://github.com/anaptecs/jeaf-x-fun-types</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/anaptecs/jeaf-x-fun-types</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<properties>
+		<jeaf.x-fun.api.version>1.8.0</jeaf.x-fun.api.version>
+		<jeaf.x-fun.impl.version>1.8.0</jeaf.x-fun.impl.version>
+	</properties>
+
+	<modules>
+		<module>jeaf-x-fun-types</module>
+	</modules>
+
+</project>
